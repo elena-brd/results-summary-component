@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --primary-light-red-color: hsl(0, 100%, 67%);
+    --primary-orange-yellow-color: hsl(39, 100%, 56%);
+    --primary-green-teal-color: hsl(166, 100%, 37%);
+    --primary-cobalt-blue-color: hsl(234, 85%, 45%);
+
+    --gradient-light-state-blue-bg: hsl(252, 100%, 67%);
+    --gradient-light-royal-blue-bg: hsl(241, 81%, 54%);
+    --gradient-violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --gradient-persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    --neutral-white-color: hsl(0, 0%, 100%);
+    --neutral-pale-blue-color: hsl(221, 100%, 96%);
+    --neutral-light-lavender-color: hsl(241, 100%, 89%);
+    --neutral-dark-gray-blue-color: hsl(224, 30%, 27%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    line-height: 1.4;
+    background: #f9f9f9;
+    color: var(--neutral-dark-gray-blue-color);
+}
+
+/* Utilities */
+.dark {
+    color: var(--neutral-dark-gray-blue-color);
+}
+
+.light {
+    color: #888;
+}
+
+.btn {
+    display: block;
+    background: var(--neutral-dark-gray-blue-color);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    padding: 0.7rem;
+    font-size: 0.9rem;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+#section-container .container {
+    cursor: pointer;
+    overflow: hidden;
+    max-width: 1440px;
+    width: 550px;
+    margin: auto;
+    margin-top: 10rem;
+    box-shadow: 2px 1px 40px -3px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+#section-container .box {
+    display: flex;
+    background: #fff !important;
+}
+
+#section-container .title {
+    padding-top: 2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+#section-container .score {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto;
+    border-radius: 50%;
+}
+
+
+
+/* Left side */
+
+#section-container .left-box {
+    width: 350px;
+    text-align: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+}
+
+#section-container .left-box h2 {
+    color: var(--neutral-light-lavender-color);
+}
+
+
+#section-container .score span {
+    color: var(--neutral-white-color);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#section-container .left-box p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--neutral-light-lavender-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+#section-container .left-box h1 {
+    color: var(--neutral-white-color);
+    /* margin-bottom: 1rem; */
+}
+
+#section-container .left-box .description {
+    margin: 1rem 3rem 2.4rem;
+    font-size: 0.9rem;
+}
+
+
+
+/* Right Side */
+#section-container .right-box {
+    width: 300px;
+    padding: 1rem;
+    background: #fff;
+    margin: 1rem;
+}
+
+#section-container .right-box h2 {
+    padding-bottom: 1.2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+#section-container .right-box span {
+    font-weight: 700;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+#section-container .right-box img {
+    width: 18px;
+    margin-right: 0.8rem;
+}
+
+#section-container .right-box .reaction,
+#section-container .right-box .memory,
+#section-container .right-box .verbal,
+#section-container .right-box .visual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    border-radius: 5px;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+#section-container .right-box .reaction {
+    background: rgba(255, 87, 87, 0.1);
+    color: var(--primary-light-red-color);
+}
+
+#section-container .right-box .memory {
+    background: rgba(255, 176, 31, 0.1);
+    color: var(--primary-orange-yellow-color);
+}
+
+#section-container .right-box .verbal {
+    background: rgba(0, 189, 145, 0.1);
+    color: var(--primary-green-teal-color);
+}
+
+#section-container .right-box .visual {
+    background: rgba(17, 37, 212, 0.1);
+    color: var(--primary-cobalt-blue-color);
+    margin-bottom: 2rem;
+}
